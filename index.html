@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f3d3e">
+<meta name="description" content="Práctica adaptativa de Matemáticas tipo Saber 11° para grado once. Funciona sin conexión.">
+<title>ErlinQTech Móvil</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="app.css">
+</head>
+<body data-escala="16">
+
+<header class="barra" id="barra">
+  <button class="barra__btn" id="btnInicio" type="button" aria-label="Volver al inicio">
+    <span aria-hidden="true">◀</span>
+  </button>
+  <h1 class="barra__titulo" id="barraTitulo">ErlinQTech</h1>
+  <button class="barra__btn" id="btnAjustes" type="button" aria-label="Abrir ajustes" aria-expanded="false">
+    <span aria-hidden="true">☰</span>
+  </button>
+</header>
+
+<!-- Panel de ajustes -->
+<div class="panel" id="panelAjustes" hidden>
+  <h2 class="panel__titulo">Ajustes</h2>
+
+  <fieldset class="campo">
+    <legend>Tamaño del texto</legend>
+    <div class="opciones-linea" role="group">
+      <button type="button" class="chip" data-escala="16">Normal</button>
+      <button type="button" class="chip" data-escala="18">Grande</button>
+      <button type="button" class="chip" data-escala="20">Mayor</button>
+    </div>
+  </fieldset>
+
+  <fieldset class="campo">
+    <legend>Apariencia</legend>
+    <div class="opciones-linea" role="group">
+      <button type="button" class="chip" data-tema="auto">Automática</button>
+      <button type="button" class="chip" data-tema="claro">Clara</button>
+      <button type="button" class="chip" data-tema="oscuro">Oscura</button>
+    </div>
+  </fieldset>
+
+  <fieldset class="campo">
+    <legend>Alias local (opcional)</legend>
+    <input type="text" id="inpAlias" class="entrada" maxlength="20"
+           placeholder="Por ejemplo: Erlin 11-2" autocomplete="off">
+    <p class="nota">Se guarda solo en este teléfono. No escriba su documento, correo ni teléfono.</p>
+  </fieldset>
+
+  <div class="panel__acciones">
+    <button type="button" class="btn btn--secundario" id="btnValidar">Validar banco de preguntas</button>
+    <button type="button" class="btn btn--peligro" id="btnBorrar">Borrar todos mis datos</button>
+  </div>
+  <p class="nota" id="notaVersion"></p>
+</div>
+
+<main id="app">
+
+<!-- P1 · BIENVENIDA -->
+<section class="pantalla" id="p-bienvenida" aria-labelledby="h-bienvenida">
+  <div class="hero">
+    <div class="hero__marca" aria-hidden="true">
+      <svg viewBox="0 0 64 64" width="64" height="64" role="presentation">
+        <rect x="2" y="2" width="60" height="60" rx="14" fill="var(--marca)"/>
+        <path d="M10 48 C22 48 26 16 38 16 C48 16 52 30 54 40"
+              fill="none" stroke="var(--marca-tinta)" stroke-width="4"
+              stroke-linecap="round"/>
+        <circle cx="38" cy="16" r="4" fill="var(--marca-tinta)"/>
+      </svg>
+    </div>
+    <h2 id="h-bienvenida">ErlinQTech Móvil</h2>
+    <p class="hero__lema">Práctica de Matemáticas tipo Saber 11°, con explicación paso a paso.</p>
+  </div>
+
+  <p class="parrafo">
+    Esta aplicación le propone preguntas de selección múltiple con única respuesta,
+    organizadas por <strong>componente</strong>, <strong>competencia</strong> y
+    <strong>nivel de desempeño</strong>, tal como se estructura la prueba oficial.
+    Después de cada respuesta recibirá la explicación completa del razonamiento.
+  </p>
+
+  <div class="aviso aviso--info">
+    <p>Funciona sin conexión una vez instalada. No pide datos personales y no envía
+       información a ningún servidor.</p>
+  </div>
+
+  <div id="cajaReanudar" hidden class="aviso aviso--atencion">
+    <p id="txtReanudar"></p>
+    <div class="aviso__acciones">
+      <button type="button" class="btn btn--primario" id="btnReanudar">Continuar la sesión</button>
+      <button type="button" class="btn btn--secundario" id="btnDescartar">Empezar otra</button>
+    </div>
+  </div>
+
+  <div class="acciones-pila">
+    <button type="button" class="btn btn--primario btn--grande" id="btnComenzar">Comenzar</button>
+    <button type="button" class="btn btn--secundario" id="btnHistorial">Ver mi historial</button>
+  </div>
+  <p class="nota">Esta práctica apoya su preparación. No predice ni garantiza resultados en el examen.</p>
+</section>
+
+<!-- P2 · CONFIGURACIÓN -->
+<section class="pantalla" id="p-config" aria-labelledby="h-config" hidden>
+  <div class="progreso-config">
+    <span id="configPaso">Paso 1 de 6</span>
+    <div class="barra-progreso" role="progressbar" aria-labelledby="configPaso"
+         aria-valuemin="1" aria-valuemax="6" aria-valuenow="1">
+      <div class="barra-progreso__relleno" id="configRelleno"></div>
+    </div>
+  </div>
+  <h2 id="h-config" class="pregunta-config">—</h2>
+  <p class="nota" id="configAyuda"></p>
+  <div class="opciones-pila" id="configOpciones" role="group" aria-labelledby="h-config"></div>
+  <div class="acciones-fila">
+    <button type="button" class="btn btn--secundario" id="btnConfigAtras">Atrás</button>
+  </div>
+</section>
+
+<!-- P3 · ÍTEM -->
+<section class="pantalla" id="p-item" aria-labelledby="h-item" hidden>
+  <div class="item-cabecera">
+    <div class="item-cabecera__fila">
+      <span class="avance" id="itemAvance">Pregunta 1 de 10</span>
+      <span class="cronometro" id="itemCrono" hidden>00:00</span>
+    </div>
+    <dl class="ficha" id="itemFicha">
+      <div><dt>Componente</dt><dd id="fComponente">—</dd></div>
+      <div><dt>Competencia</dt><dd id="fCompetencia">—</dd></div>
+      <div><dt>Nivel de desempeño</dt><dd id="fNivel">—</dd></div>
+      <div><dt>Aprendizaje evaluado</dt><dd id="fAprendizaje">—</dd></div>
+      <div><dt>Contexto</dt><dd id="fContexto">—</dd></div>
+    </dl>
+  </div>
+
+  <h2 id="h-item" class="oculto-visual">Pregunta de práctica</h2>
+
+  <p class="narrativa" id="itemNarrativa"></p>
+  <div class="recurso" id="itemRecurso"></div>
+  <p class="enunciado" id="itemEnunciado"></p>
+
+  <div class="opciones-pila" id="itemOpciones" role="radiogroup" aria-label="Opciones de respuesta"></div>
+
+  <div class="acciones-pila">
+    <button type="button" class="btn btn--primario btn--grande" id="btnConfirmar" disabled>
+      Confirmar respuesta
+    </button>
+  </div>
+  <p class="nota" id="itemNotaRacha" aria-live="polite"></p>
+</section>
+
+<!-- P4 · RETROALIMENTACIÓN -->
+<section class="pantalla" id="p-feedback" aria-labelledby="h-feedback" hidden>
+  <div class="veredicto" id="fbVeredicto" aria-live="polite">
+    <h2 id="h-feedback">—</h2>
+    <p id="fbResumen"></p>
+  </div>
+
+  <details class="bloque" id="fbBloquePasos" open>
+    <summary>Respuesta correcta y explicación paso a paso</summary>
+    <div class="bloque__cuerpo">
+      <p class="clave-linea" id="fbClave"></p>
+      <ol class="pasos" id="fbPasos"></ol>
+    </div>
+  </details>
+
+  <details class="bloque">
+    <summary>Por qué las otras opciones son incorrectas</summary>
+    <div class="bloque__cuerpo">
+      <ul class="distractores" id="fbDistractores"></ul>
+    </div>
+  </details>
+
+  <details class="bloque bloque--refuerzo" id="fbBloqueRemedial" hidden open>
+    <summary>Concepto que debe reforzar</summary>
+    <div class="bloque__cuerpo">
+      <p id="fbRemedial"></p>
+    </div>
+  </details>
+
+  <details class="bloque">
+    <summary>Ver de nuevo la pregunta y su gráfico</summary>
+    <div class="bloque__cuerpo">
+      <p class="narrativa" id="fbNarrativa"></p>
+      <div class="recurso" id="fbRecurso"></div>
+      <p class="enunciado" id="fbEnunciado"></p>
+    </div>
+  </details>
+
+  <div class="acciones-pila">
+    <button type="button" class="btn btn--primario btn--grande" id="btnSiguiente">Siguiente pregunta</button>
+  </div>
+</section>
+
+<!-- P5 · DIAGNÓSTICO -->
+<section class="pantalla" id="p-diagnostico" aria-labelledby="h-diag" hidden>
+  <h2 id="h-diag">Diagnóstico de la sesión</h2>
+  <div class="marcador">
+    <div class="marcador__dato"><span id="dgPorcentaje">0 %</span><small>de acierto</small></div>
+    <div class="marcador__dato"><span id="dgAciertos">0/0</span><small>preguntas</small></div>
+    <div class="marcador__dato"><span id="dgNivel">1</span><small>nivel alcanzado</small></div>
+  </div>
+
+  <h3>Desempeño por componente</h3>
+  <div id="dgComponentes" class="tabla-envoltura"></div>
+
+  <h3>Desempeño por competencia</h3>
+  <div id="dgCompetencias" class="tabla-envoltura"></div>
+
+  <h3>Desempeño por nivel</h3>
+  <div id="dgNiveles" class="tabla-envoltura"></div>
+
+  <h3>Lectura del desempeño</h3>
+  <div id="dgLectura"></div>
+
+  <h3>Qué practicar enseguida</h3>
+  <ul class="lista-reco" id="dgRecomendaciones"></ul>
+
+  <h3>Estrategias de estudio sugeridas</h3>
+  <ul class="lista-reco" id="dgEstrategias"></ul>
+
+  <div class="acciones-pila">
+    <button type="button" class="btn btn--primario" id="btnRepetirFallos" hidden>
+      Repetir solo las preguntas falladas
+    </button>
+    <button type="button" class="btn btn--secundario" id="btnExportar">Exportar reporte</button>
+    <button type="button" class="btn btn--secundario" id="btnCompartir" hidden>Compartir reporte</button>
+    <button type="button" class="btn btn--secundario" id="btnNuevaSesion">Nueva sesión</button>
+  </div>
+  <p class="nota">El reporte se descarga en este teléfono. Usted decide si lo comparte con su docente.</p>
+</section>
+
+<!-- P6 · HISTORIAL -->
+<section class="pantalla" id="p-historial" aria-labelledby="h-hist" hidden>
+  <h2 id="h-hist">Mi historial</h2>
+  <p class="nota" id="histVacio" hidden>Todavía no hay sesiones registradas en este teléfono.</p>
+  <div id="histTendencia"></div>
+  <div id="histLista" class="historial"></div>
+  <div class="acciones-pila">
+    <button type="button" class="btn btn--secundario" id="btnHistVolver">Volver</button>
+  </div>
+</section>
+
+<!-- VALIDADOR -->
+<section class="pantalla" id="p-validador" aria-labelledby="h-val" hidden>
+  <h2 id="h-val">Validación del banco de preguntas</h2>
+  <p class="nota">Esta revisión comprueba la estructura de cada ítem. Úsela después de agregar
+     preguntas nuevas al archivo <code>banco.json</code>.</p>
+  <div id="valResumen"></div>
+  <div id="valDetalle"></div>
+  <div class="acciones-pila">
+    <button type="button" class="btn btn--secundario" id="btnValVolver">Volver</button>
+  </div>
+</section>
+
+<!-- ERROR -->
+<section class="pantalla" id="p-error" aria-labelledby="h-err" hidden>
+  <h2 id="h-err">No fue posible cargar las preguntas</h2>
+  <div class="aviso aviso--error"><p id="errMensaje"></p></div>
+  <p class="parrafo">Revise que el archivo <code>banco.json</code> esté junto a la aplicación y que
+     su contenido sea JSON válido. Si acaba de editarlo, una coma sobrante o una comilla sin
+     cerrar suele ser la causa.</p>
+  <div class="acciones-pila">
+    <button type="button" class="btn btn--primario" id="btnRecargar">Volver a intentar</button>
+  </div>
+</section>
+
+</main>
+
+<div class="cargando" id="cargando" aria-live="polite">
+  <p>Cargando preguntas…</p>
+</div>
+
+<script src="graficos.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1398 @@
+{
+  "version_banco": "1.0",
+  "fecha": "2026-11-08",
+  "total_items": 36,
+  "autor": "I.E. Las Américas — Florida, Valle del Cauca",
+  "nota": "Ítems originales redactados para práctica escolar. Estructura alineada con los componentes, competencias y niveles de desempeño del examen Saber 11° en Matemáticas.",
+  "temas": [
+    { "id": "lectura-graficos", "nombre": "Lectura de gráficos y tablas", "etiquetas": ["lectura de gráficos", "tablas de frecuencia"] },
+    { "id": "medidas", "nombre": "Medidas de tendencia central y dispersión", "etiquetas": ["medidas de tendencia central", "dispersión"] },
+    { "id": "probabilidad", "nombre": "Probabilidad", "etiquetas": ["probabilidad"] },
+    { "id": "geometria-plana", "nombre": "Geometría plana: perímetro, área y Pitágoras", "etiquetas": ["perímetro", "área", "teorema de Pitágoras", "semejanza"] },
+    { "id": "geometria-solidos", "nombre": "Sólidos: volumen y superficie", "etiquetas": ["volumen", "superficie", "sólidos"] },
+    { "id": "plano-cartesiano", "nombre": "Plano cartesiano y coordenadas", "etiquetas": ["plano cartesiano", "coordenadas"] },
+    { "id": "funciones", "nombre": "Funciones y razón de cambio", "etiquetas": ["función lineal", "función cuadrática", "función exponencial", "razón de cambio"] },
+    { "id": "ecuaciones", "nombre": "Ecuaciones, sistemas e inecuaciones", "etiquetas": ["ecuaciones", "sistemas de ecuaciones", "inecuaciones"] }
+  ],
+  "items": [
+
+    {
+      "id": "EST-N1-001",
+      "componente": "Estadística",
+      "competencia": "Interpretación y representación",
+      "nivel": 1,
+      "aprendizaje": "Leer información puntual en un diagrama de barras.",
+      "contexto": "Familiar",
+      "narrativa": "En la Institución Educativa Las Américas, el coordinador registró durante una semana cuántos estudiantes de grado once llegaron en el bus escolar.",
+      "enunciado": "Según el gráfico, ¿en qué día llegaron más estudiantes en el bus escolar?",
+      "recurso": {
+        "tipo": "grafico_barras",
+        "titulo": "Estudiantes que llegaron en bus escolar",
+        "eje_x": "Día de la semana",
+        "eje_y": "Número de estudiantes",
+        "datos": [
+          { "etiqueta": "Lunes", "valor": 12 },
+          { "etiqueta": "Martes", "valor": 18 },
+          { "etiqueta": "Miércoles", "valor": 15 },
+          { "etiqueta": "Jueves", "valor": 20 },
+          { "etiqueta": "Viernes", "valor": 9 }
+        ],
+        "descripcion_accesible": "Diagrama de barras con cinco días: lunes 12, martes 18, miércoles 15, jueves 20 y viernes 9 estudiantes."
+      },
+      "opciones": { "A": "Lunes", "B": "Martes", "C": "Miércoles", "D": "Jueves" },
+      "clave": "D",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "Identifique qué representa cada eje: en el horizontal están los días y en el vertical el número de estudiantes.",
+        "Compare la altura de las cinco barras: 12, 18, 15, 20 y 9 estudiantes.",
+        "La barra más alta corresponde al jueves, con 20 estudiantes. Por tanto, ese es el día con mayor cantidad."
+      ],
+      "distractores": {
+        "A": "El lunes registra 12 estudiantes; es el segundo valor más bajo, no el mayor.",
+        "B": "El martes registra 18 estudiantes. Es un valor alto, pero dos unidades menor que el del jueves; conviene comparar todas las barras antes de decidir.",
+        "C": "El miércoles registra 15 estudiantes, un valor intermedio."
+      },
+      "concepto_remedial": "Para hallar el máximo en un diagrama de barras, lea el valor de cada barra en el eje vertical y compárelos todos. No basta con mirar dos barras vecinas: el mayor puede estar en cualquier posición del gráfico.",
+      "etiquetas": ["lectura de gráficos"]
+    },
+
+    {
+      "id": "EST-N1-002",
+      "componente": "Estadística",
+      "competencia": "Interpretación y representación",
+      "nivel": 1,
+      "aprendizaje": "Comparar dos categorías a partir de un pictograma.",
+      "contexto": "Comunitario",
+      "narrativa": "El comité ambiental del colegio pesó los materiales reciclables recogidos durante el mes y los representó con un pictograma.",
+      "enunciado": "¿Cuántos kilogramos más de papel que de plástico se recogieron en el mes?",
+      "recurso": {
+        "tipo": "pictograma",
+        "titulo": "Material reciclable recogido en el mes",
+        "simbolo": "■",
+        "equivale_a": 5,
+        "unidad": "kg",
+        "datos": [
+          { "etiqueta": "Papel", "valor": 40 },
+          { "etiqueta": "Plástico", "valor": 25 },
+          { "etiqueta": "Vidrio", "valor": 15 },
+          { "etiqueta": "Metal", "valor": 10 }
+        ],
+        "descripcion_accesible": "Pictograma donde cada cuadro equivale a 5 kilogramos: papel 40 kg, plástico 25 kg, vidrio 15 kg y metal 10 kg."
+      },
+      "opciones": { "A": "5 kg", "B": "10 kg", "C": "15 kg", "D": "65 kg" },
+      "clave": "C",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "Lea la clave del pictograma: cada cuadro representa 5 kg.",
+        "El papel tiene 8 cuadros, es decir 8 × 5 = 40 kg; el plástico tiene 5 cuadros, es decir 5 × 5 = 25 kg.",
+        "La pregunta pide una diferencia, no un total: 40 − 25 = 15 kg más de papel que de plástico."
+      ],
+      "distractores": {
+        "A": "5 kg es el valor de un solo cuadro del pictograma, no la diferencia entre las dos categorías.",
+        "B": "10 kg corresponde a la diferencia de dos cuadros; aquí la diferencia es de tres cuadros.",
+        "D": "65 kg es la suma de papel y plástico. La palabra «más» en este enunciado indica diferencia, no suma."
+      },
+      "concepto_remedial": "En un pictograma, cada símbolo representa una cantidad fija que aparece en la clave. Multiplique el número de símbolos por ese valor y lea con cuidado si el enunciado pide un total (suma) o una comparación (resta).",
+      "etiquetas": ["lectura de gráficos"]
+    },
+
+    {
+      "id": "EST-N1-003",
+      "componente": "Estadística",
+      "competencia": "Formulación y ejecución",
+      "nivel": 1,
+      "aprendizaje": "Calcular un total a partir de una tabla de datos.",
+      "contexto": "Laboral",
+      "narrativa": "La tienda escolar registra en una tabla el número de refrigerios vendidos cada día de la semana.",
+      "enunciado": "¿Cuántos refrigerios se vendieron en total durante los cinco días?",
+      "recurso": {
+        "tipo": "tabla",
+        "titulo": "Refrigerios vendidos en la tienda escolar",
+        "columnas": ["Día", "Refrigerios vendidos"],
+        "filas": [["Lunes", 12], ["Martes", 15], ["Miércoles", 9], ["Jueves", 14], ["Viernes", 20]]
+      },
+      "opciones": { "A": "60", "B": "66", "C": "70", "D": "75" },
+      "clave": "C",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "Identifique qué cantidad pide el enunciado: el total de la semana, es decir la suma de los cinco registros.",
+        "Sume los valores de la columna: 12 + 15 = 27; 27 + 9 = 36; 36 + 14 = 50; 50 + 20 = 70.",
+        "El total de refrigerios vendidos en los cinco días es 70."
+      ],
+      "distractores": {
+        "A": "60 se obtiene si se omite uno de los días al sumar; verifique que incluyó los cinco valores.",
+        "B": "66 corresponde a un error al sumar 14 + 20; conviene sumar en dos grupos y luego juntar los resultados.",
+        "D": "75 excede el total; probablemente se contó dos veces alguno de los valores."
+      },
+      "concepto_remedial": "Al sumar varios datos de una tabla, agrúpelos en parejas para reducir errores y cuente al final cuántos valores usó: debe coincidir con el número de filas.",
+      "etiquetas": ["tablas de frecuencia"]
+    },
+
+    {
+      "id": "EST-N2-001",
+      "componente": "Estadística",
+      "competencia": "Formulación y ejecución",
+      "nivel": 2,
+      "aprendizaje": "Calcular la media aritmética de un conjunto de datos.",
+      "contexto": "Familiar",
+      "narrativa": "Daniela anotó las notas definitivas que obtuvo en las cinco evaluaciones de matemáticas del período.",
+      "enunciado": "¿Cuál es el promedio de las cinco notas de Daniela?",
+      "recurso": {
+        "tipo": "grafico_barras",
+        "titulo": "Notas de Daniela en el período",
+        "eje_x": "Evaluación",
+        "eje_y": "Nota (escala de 1 a 5)",
+        "datos": [
+          { "etiqueta": "Ev. 1", "valor": 3 },
+          { "etiqueta": "Ev. 2", "valor": 4 },
+          { "etiqueta": "Ev. 3", "valor": 3.5 },
+          { "etiqueta": "Ev. 4", "valor": 2.5 },
+          { "etiqueta": "Ev. 5", "valor": 4.5 }
+        ],
+        "descripcion_accesible": "Barras con las notas 3,0; 4,0; 3,5; 2,5 y 4,5."
+      },
+      "opciones": { "A": "3,0", "B": "3,5", "C": "3,8", "D": "4,0" },
+      "clave": "B",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "La media aritmética es la suma de los datos dividida entre la cantidad de datos.",
+        "Sume las cinco notas: 3,0 + 4,0 + 3,5 + 2,5 + 4,5 = 17,5.",
+        "Divida entre 5: 17,5 ÷ 5 = 3,5. El promedio de Daniela es 3,5."
+      ],
+      "distractores": {
+        "A": "3,0 es la nota de la primera evaluación, no el promedio del conjunto.",
+        "C": "3,8 resulta de dividir entre 4 en lugar de 5, o de omitir la nota más baja.",
+        "D": "4,0 es la nota de la segunda evaluación; además, al ser mayor que varias notas del grupo, no puede ser el promedio."
+      },
+      "concepto_remedial": "La media siempre queda entre el dato menor y el dato mayor del conjunto. Si su resultado está fuera de ese intervalo, hay un error en la suma o en el divisor, que debe ser la cantidad total de datos.",
+      "etiquetas": ["medidas de tendencia central"]
+    },
+
+    {
+      "id": "EST-N2-002",
+      "componente": "Estadística",
+      "competencia": "Interpretación y representación",
+      "nivel": 2,
+      "aprendizaje": "Obtener una frecuencia relativa acumulada a partir de un histograma.",
+      "contexto": "Comunitario",
+      "narrativa": "En la jornada de salud escolar se midió la estatura de los 30 estudiantes de grado once y los resultados se organizaron en un histograma por intervalos de 10 cm.",
+      "enunciado": "¿Qué porcentaje de los estudiantes mide menos de 170 cm?",
+      "recurso": {
+        "tipo": "histograma",
+        "titulo": "Estatura de los estudiantes de grado once",
+        "eje_x": "Estatura (cm)",
+        "eje_y": "Número de estudiantes",
+        "intervalos": [
+          { "min": 150, "max": 160, "frecuencia": 6 },
+          { "min": 160, "max": 170, "frecuencia": 12 },
+          { "min": 170, "max": 180, "frecuencia": 8 },
+          { "min": 180, "max": 190, "frecuencia": 4 }
+        ],
+        "descripcion_accesible": "Histograma de cuatro intervalos: de 150 a 160 cm hay 6 estudiantes; de 160 a 170 cm hay 12; de 170 a 180 cm hay 8; de 180 a 190 cm hay 4."
+      },
+      "opciones": { "A": "40 %", "B": "50 %", "C": "60 %", "D": "70 %" },
+      "clave": "C",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "«Menos de 170 cm» reúne los intervalos [150, 160) y [160, 170).",
+        "Sume sus frecuencias: 6 + 12 = 18 estudiantes.",
+        "Divida entre el total y exprese en porcentaje: 18 ÷ 30 = 0,6, es decir 60 %."
+      ],
+      "distractores": {
+        "A": "40 % corresponde a los estudiantes que miden 170 cm o más (8 + 4 = 12 de 30); es el complemento de lo que se pide.",
+        "B": "50 % sería 15 estudiantes, cifra que no coincide con ningún grupo de intervalos del histograma.",
+        "D": "70 % incluiría parte del intervalo [170, 180), que queda fuera de la condición «menos de 170 cm»."
+      },
+      "concepto_remedial": "Para una frecuencia acumulada, primero decida qué intervalos cumplen la condición, luego sume sus frecuencias y divida entre el total. Verifique que su porcentaje y el del complemento sumen 100 %.",
+      "etiquetas": ["lectura de gráficos", "tablas de frecuencia"]
+    },
+
+    {
+      "id": "EST-N2-003",
+      "componente": "Estadística",
+      "competencia": "Formulación y ejecución",
+      "nivel": 2,
+      "aprendizaje": "Calcular la probabilidad de un evento simple en un contexto escolar.",
+      "contexto": "Comunitario",
+      "narrativa": "Para financiar la excursión de grado once se vendieron 40 boletas de una rifa, distribuidas entre tres grados como muestra el gráfico. Todas las boletas tienen la misma posibilidad de ganar.",
+      "enunciado": "¿Cuál es la probabilidad de que la boleta ganadora corresponda a un estudiante de grado once?",
+      "recurso": {
+        "tipo": "grafico_circular",
+        "titulo": "Boletas vendidas por grado (total: 40)",
+        "mostrar_porcentajes": false,
+        "datos": [
+          { "etiqueta": "Grado 9", "valor": 10 },
+          { "etiqueta": "Grado 10", "valor": 14 },
+          { "etiqueta": "Grado 11", "valor": 16 }
+        ],
+        "descripcion_accesible": "Gráfico circular con 10 boletas de grado 9, 14 de grado 10 y 16 de grado 11, para un total de 40."
+      },
+      "opciones": { "A": "0,16", "B": "0,25", "C": "0,40", "D": "0,60" },
+      "clave": "C",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "La probabilidad de un evento simple es el número de casos favorables sobre el número total de casos posibles.",
+        "Casos favorables: las 16 boletas de grado once. Casos posibles: las 40 boletas vendidas.",
+        "Calcule 16 ÷ 40 = 0,4. La probabilidad es 0,40, es decir 40 %."
+      ],
+      "distractores": {
+        "A": "0,16 toma el número de boletas como si ya fuera una probabilidad; falta dividir entre el total de 40.",
+        "B": "0,25 es la probabilidad asociada a grado 9 (10 ÷ 40), no a grado once.",
+        "D": "0,60 corresponde a la probabilidad de que la boleta NO sea de grado once (24 ÷ 40), es decir el complemento."
+      },
+      "concepto_remedial": "Toda probabilidad es un número entre 0 y 1. Escriba primero la fracción casos favorables / casos totales y solo después conviértala a decimal o a porcentaje.",
+      "etiquetas": ["probabilidad"]
+    },
+
+    {
+      "id": "EST-N3-001",
+      "componente": "Estadística",
+      "competencia": "Formulación y ejecución",
+      "nivel": 3,
+      "aprendizaje": "Determinar la mediana a partir de una tabla de frecuencias.",
+      "contexto": "Familiar",
+      "narrativa": "En la clase de estadística se preguntó a los 20 estudiantes del curso cuántos hermanos tiene cada uno. Las respuestas se organizaron en la siguiente tabla.",
+      "enunciado": "¿Cuál es la mediana del número de hermanos en ese curso?",
+      "recurso": {
+        "tipo": "tabla",
+        "titulo": "Número de hermanos por estudiante",
+        "columnas": ["Número de hermanos", "Cantidad de estudiantes"],
+        "filas": [["0", 4], ["1", 7], ["2", 5], ["3", 3], ["4", 1]]
+      },
+      "opciones": { "A": "0", "B": "1", "C": "2", "D": "4" },
+      "clave": "B",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "La mediana es el valor que ocupa la posición central cuando los datos se ordenan. Con 20 datos, es el promedio de las posiciones 10 y 11.",
+        "Construya las frecuencias acumuladas: hasta 0 hermanos hay 4 estudiantes; hasta 1 hermano hay 4 + 7 = 11; hasta 2 hermanos hay 16.",
+        "Las posiciones 10 y 11 están ambas dentro del grupo de «1 hermano», porque la acumulada pasa de 4 a 11 en ese valor. La mediana es 1."
+      ],
+      "distractores": {
+        "A": "0 es el valor con la segunda mayor frecuencia, pero las posiciones centrales 10 y 11 ya superan los 4 primeros datos.",
+        "C": "2 sería la mediana si la acumulada llegara a 10 antes de ese valor; aquí la acumulada en «1 hermano» es 11, de modo que la posición central cae antes.",
+        "D": "4 es el valor máximo observado y aparece una sola vez; no puede ser el valor central del conjunto."
+      },
+      "concepto_remedial": "En una tabla de frecuencias no se busca la frecuencia mayor, sino la posición central. Calcule n ÷ 2 y acumule frecuencias hasta alcanzar esa posición; el valor en el que se alcanza es la mediana.",
+      "etiquetas": ["medidas de tendencia central", "tablas de frecuencia"]
+    },
+
+    {
+      "id": "EST-N3-002",
+      "componente": "Estadística",
+      "competencia": "Interpretación y representación",
+      "nivel": 3,
+      "aprendizaje": "Comparar la dispersión de dos conjuntos mediante diagramas de caja.",
+      "contexto": "Matemático",
+      "narrativa": "Dos grupos de grado once presentaron el mismo simulacro de matemáticas. Los resultados se representaron en diagramas de caja y bigotes.",
+      "enunciado": "¿Cuál de las siguientes afirmaciones sobre el rango intercuartílico (RIQ) es correcta?",
+      "recurso": {
+        "tipo": "diagrama_caja",
+        "titulo": "Puntajes del simulacro por grupo",
+        "eje": "Puntaje",
+        "cajas": [
+          { "nombre": "Grupo A", "min": 30, "q1": 45, "mediana": 52, "q3": 60, "max": 78 },
+          { "nombre": "Grupo B", "min": 35, "q1": 42, "mediana": 58, "q3": 66, "max": 80 }
+        ],
+        "descripcion_accesible": "Grupo A: mínimo 30, primer cuartil 45, mediana 52, tercer cuartil 60, máximo 78. Grupo B: mínimo 35, primer cuartil 42, mediana 58, tercer cuartil 66, máximo 80."
+      },
+      "opciones": {
+        "A": "El RIQ del grupo A es mayor, porque su mínimo es más bajo.",
+        "B": "El RIQ del grupo B es mayor, de modo que su 50 % central está más disperso.",
+        "C": "Los dos grupos tienen el mismo RIQ, porque sus medianas se parecen.",
+        "D": "No es posible comparar el RIQ con un diagrama de caja."
+      },
+      "clave": "B",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "El rango intercuartílico se calcula como RIQ = Q3 − Q1 y describe la dispersión del 50 % central de los datos.",
+        "Grupo A: 60 − 45 = 15. Grupo B: 66 − 42 = 24.",
+        "Como 24 > 15, el 50 % central del grupo B está más disperso que el del grupo A."
+      ],
+      "distractores": {
+        "A": "El mínimo pertenece al bigote, no a la caja. El RIQ solo depende de Q1 y Q3, y en el grupo A es menor (15 frente a 24).",
+        "C": "Las medianas (52 y 58) no determinan el RIQ; además esos valores tampoco son iguales.",
+        "D": "El diagrama de caja muestra justamente los cuartiles, por lo que permite calcular y comparar el RIQ de manera directa."
+      },
+      "concepto_remedial": "En un diagrama de caja, la caja va de Q1 a Q3 y contiene el 50 % central de los datos; su longitud es el RIQ. Los bigotes informan sobre los extremos, pero no intervienen en el cálculo del RIQ.",
+      "etiquetas": ["dispersión", "lectura de gráficos"]
+    },
+
+    {
+      "id": "EST-N3-003",
+      "componente": "Estadística",
+      "competencia": "Argumentación",
+      "nivel": 3,
+      "aprendizaje": "Argumentar sobre la relación entre dos variables a partir de un diagrama de dispersión.",
+      "contexto": "Familiar",
+      "narrativa": "Un grupo de estudiantes registró, para seis compañeros, las horas de estudio semanales dedicadas a matemáticas y el puntaje obtenido en el último simulacro.",
+      "enunciado": "¿Cuál afirmación está mejor sustentada por los datos del diagrama?",
+      "recurso": {
+        "tipo": "dispersion",
+        "titulo": "Horas de estudio y puntaje en el simulacro",
+        "eje_x": "Horas de estudio por semana",
+        "eje_y": "Puntaje",
+        "linea_tendencia": true,
+        "puntos": [
+          { "x": 1, "y": 40 }, { "x": 2, "y": 45 }, { "x": 3, "y": 55 },
+          { "x": 4, "y": 58 }, { "x": 5, "y": 68 }, { "x": 6, "y": 72 }
+        ],
+        "descripcion_accesible": "Seis puntos que ascienden: con 1 hora el puntaje es 40; con 2 horas, 45; con 3 horas, 55; con 4 horas, 58; con 5 horas, 68; con 6 horas, 72."
+      },
+      "opciones": {
+        "A": "Existe una relación positiva: a más horas de estudio registradas, mayor puntaje observado.",
+        "B": "Existe una relación negativa, pues los puntos descienden de izquierda a derecha.",
+        "C": "Los datos prueban que estudiar seis horas garantiza un puntaje de 72 en cualquier simulacro.",
+        "D": "No hay relación alguna entre las dos variables, porque los puntos no están sobre una recta exacta."
+      },
+      "clave": "A",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "Observe la tendencia general de la nube de puntos: al aumentar la variable del eje horizontal, los valores del eje vertical también aumentan.",
+        "Verifíquelo con dos pares extremos: (1 hora, 40 puntos) y (6 horas, 72 puntos). El crecimiento es sostenido en todos los registros intermedios.",
+        "Esa tendencia creciente describe una relación positiva entre las variables, aunque los puntos no estén exactamente alineados."
+      ],
+      "distractores": {
+        "B": "Una relación negativa exigiría que el puntaje disminuyera al aumentar las horas, y en el gráfico ocurre lo contrario.",
+        "C": "Los datos describen seis casos observados; una relación estadística no garantiza un resultado individual futuro.",
+        "D": "La relación estadística no requiere alineación perfecta. Una tendencia clara, aunque con variaciones, ya evidencia asociación entre las variables."
+      },
+      "concepto_remedial": "Un diagrama de dispersión informa sobre la tendencia y la fuerza de la asociación entre dos variables. Asociación no es lo mismo que garantía individual ni implica necesariamente que una variable cause la otra.",
+      "etiquetas": ["dispersión", "lectura de gráficos"]
+    },
+
+    {
+      "id": "EST-N4-001",
+      "componente": "Estadística",
+      "competencia": "Formulación y ejecución",
+      "nivel": 4,
+      "aprendizaje": "Determinar el dato faltante para que la media alcance un valor deseado.",
+      "contexto": "Familiar",
+      "narrativa": "Santiago lleva cuatro notas registradas en matemáticas y quiere que, al terminar el período con cinco notas, su promedio sea exactamente 3,6.",
+      "enunciado": "¿Qué nota debe obtener Santiago en la quinta evaluación para lograr ese promedio?",
+      "recurso": {
+        "tipo": "grafico_barras",
+        "titulo": "Notas registradas de Santiago",
+        "eje_x": "Evaluación",
+        "eje_y": "Nota",
+        "datos": [
+          { "etiqueta": "Ev. 1", "valor": 3.2 },
+          { "etiqueta": "Ev. 2", "valor": 4 },
+          { "etiqueta": "Ev. 3", "valor": 2.8 },
+          { "etiqueta": "Ev. 4", "valor": 3.6 }
+        ],
+        "descripcion_accesible": "Cuatro barras con las notas 3,2; 4,0; 2,8 y 3,6."
+      },
+      "opciones": { "A": "3,6", "B": "4,0", "C": "4,4", "D": "4,8" },
+      "clave": "C",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "Si el promedio de cinco notas debe ser 3,6, la suma de las cinco notas debe ser 5 × 3,6 = 18,0.",
+        "Sume las notas que ya tiene: 3,2 + 4,0 + 2,8 + 3,6 = 13,6.",
+        "La nota faltante es la diferencia: 18,0 − 13,6 = 4,4."
+      ],
+      "distractores": {
+        "A": "3,6 es el promedio deseado, no la nota que falta. Obtener 3,6 dejaría la suma en 17,2 y el promedio en 3,44.",
+        "B": "Con 4,0 la suma sería 17,6 y el promedio 3,52, todavía por debajo de la meta.",
+        "D": "Con 4,8 la suma sería 18,4 y el promedio 3,68, por encima de la meta de 3,6; el enunciado pide el valor exacto, no uno mayor."
+      },
+      "concepto_remedial": "Para hallar un dato faltante conocida la media, use la relación suma = media × cantidad de datos. Despeje la suma total requerida y réstele la suma de los datos conocidos.",
+      "etiquetas": ["medidas de tendencia central"]
+    },
+
+    {
+      "id": "EST-N4-002",
+      "componente": "Estadística",
+      "competencia": "Argumentación",
+      "nivel": 4,
+      "aprendizaje": "Distinguir variación absoluta de variación relativa al comparar grupos.",
+      "contexto": "Laboral",
+      "narrativa": "La secretaría de educación comparó la matrícula de grado once en dos sedes de la institución durante dos años.",
+      "enunciado": "¿Cuál afirmación se sustenta correctamente en los datos?",
+      "recurso": {
+        "tipo": "grafico_barras_agrupadas",
+        "titulo": "Matrícula de grado once por sede",
+        "eje_x": "Sede",
+        "eje_y": "Estudiantes matriculados",
+        "categorias": ["Sede A", "Sede B"],
+        "series": [
+          { "nombre": "2024", "valores": [30, 50] },
+          { "nombre": "2025", "valores": [36, 58] }
+        ],
+        "descripcion_accesible": "Sede A pasó de 30 a 36 estudiantes; sede B pasó de 50 a 58 estudiantes."
+      },
+      "opciones": {
+        "A": "La sede B creció más que la sede A, tanto en número de estudiantes como en porcentaje.",
+        "B": "La sede A creció más en número de estudiantes, aunque menos en porcentaje.",
+        "C": "La sede B creció más en número de estudiantes, pero la sede A creció más en porcentaje.",
+        "D": "Las dos sedes crecieron en el mismo porcentaje, porque ambas aumentaron su matrícula."
+      },
+      "clave": "C",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "Calcule la variación absoluta: sede A aumentó 36 − 30 = 6 estudiantes; sede B aumentó 58 − 50 = 8 estudiantes. En número absoluto, B creció más.",
+        "Calcule la variación relativa dividiendo el aumento entre el valor inicial: sede A, 6 ÷ 30 = 0,20 (20 %); sede B, 8 ÷ 50 = 0,16 (16 %).",
+        "Por tanto, la sede B creció más en cantidad de estudiantes, pero la sede A creció más en términos porcentuales."
+      ],
+      "distractores": {
+        "A": "Es cierto solo en número absoluto. En porcentaje la sede B creció 16 %, menos que el 20 % de la sede A.",
+        "B": "Invierte los resultados: en número absoluto el mayor aumento fue el de la sede B (8 frente a 6).",
+        "D": "Crecer no implica crecer igual. Los porcentajes son distintos porque los valores iniciales son distintos."
+      },
+      "concepto_remedial": "La variación absoluta es la diferencia entre dos cantidades; la variación relativa es esa diferencia dividida entre el valor inicial. Dos grupos de tamaño distinto pueden tener la misma variación absoluta y porcentajes muy diferentes.",
+      "etiquetas": ["lectura de gráficos", "razón de cambio"]
+    },
+
+    {
+      "id": "EST-N4-003",
+      "componente": "Estadística",
+      "competencia": "Formulación y ejecución",
+      "nivel": 4,
+      "aprendizaje": "Calcular una probabilidad condicional usando una tabla de doble entrada.",
+      "contexto": "Comunitario",
+      "narrativa": "El docente de educación física registró en una tabla cuántos estudiantes de grado décimo y once practican algún deporte fuera de la jornada escolar.",
+      "enunciado": "Si se elige al azar uno de los estudiantes que sí practica deporte, ¿cuál es la probabilidad de que sea de grado once?",
+      "recurso": {
+        "tipo": "tabla",
+        "titulo": "Práctica de deporte fuera de la jornada",
+        "columnas": ["Grado", "Sí practica", "No practica"],
+        "filas": [["Décimo", 24, 16], ["Once", 30, 30]]
+      },
+      "opciones": { "A": "30/100", "B": "30/60", "C": "30/54", "D": "24/54" },
+      "clave": "C",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "La condición «entre los que sí practican deporte» reduce el conjunto de casos posibles: ya no son todos los estudiantes.",
+        "Cuente los casos posibles bajo esa condición: 24 de décimo + 30 de once = 54 estudiantes que practican deporte.",
+        "Los casos favorables son los 30 de grado once. La probabilidad pedida es 30/54, que simplificada equivale a 5/9 ≈ 0,56."
+      ],
+      "distractores": {
+        "A": "30/100 usa como denominador el total de los 100 estudiantes e ignora la condición impuesta en el enunciado.",
+        "B": "30/60 usa como denominador el total de estudiantes de grado once; eso responde a otra pregunta: qué proporción de los de once practica deporte.",
+        "D": "24/54 corresponde a la probabilidad de que el estudiante elegido sea de grado décimo, no de once."
+      },
+      "concepto_remedial": "En una probabilidad condicional, la información dada cambia el denominador: los casos posibles son solo los que cumplen la condición. Identifique primero ese subconjunto y después cuente los casos favorables dentro de él.",
+      "etiquetas": ["probabilidad", "tablas de frecuencia"]
+    },
+
+    {
+      "id": "GEO-N1-001",
+      "componente": "Geometría",
+      "competencia": "Formulación y ejecución",
+      "nivel": 1,
+      "aprendizaje": "Calcular el perímetro de un rectángulo a partir de sus dimensiones.",
+      "contexto": "Comunitario",
+      "narrativa": "La junta de acción comunal quiere cercar una huerta escolar de forma rectangular cuyas medidas aparecen en la figura.",
+      "enunciado": "¿Cuántos metros de cerca se necesitan para rodear completamente la huerta?",
+      "recurso": {
+        "tipo": "figura_geometrica",
+        "titulo": "Huerta escolar",
+        "forma": "cuadrilatero",
+        "vertices": [
+          { "x": 0, "y": 0, "etiqueta": "A" },
+          { "x": 8, "y": 0, "etiqueta": "B" },
+          { "x": 8, "y": 5, "etiqueta": "C" },
+          { "x": 0, "y": 5, "etiqueta": "D" }
+        ],
+        "medidas": [
+          { "entre": ["A", "B"], "valor": "8 m" },
+          { "entre": ["B", "C"], "valor": "5 m" }
+        ],
+        "descripcion_accesible": "Rectángulo ABCD con base de 8 metros y altura de 5 metros."
+      },
+      "opciones": { "A": "13 m", "B": "26 m", "C": "40 m", "D": "80 m" },
+      "clave": "B",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "El perímetro de un rectángulo es la suma de las longitudes de sus cuatro lados.",
+        "En un rectángulo los lados opuestos son iguales: dos lados de 8 m y dos lados de 5 m.",
+        "Calcule P = 2 × 8 + 2 × 5 = 16 + 10 = 26 m de cerca."
+      ],
+      "distractores": {
+        "A": "13 m es la suma de un solo lado largo y un solo lado corto; falta contar los dos lados opuestos.",
+        "C": "40 m² es el área del rectángulo (8 × 5), una magnitud distinta del perímetro.",
+        "D": "80 m duplica el área; no corresponde a ninguna de las dos magnitudes de la figura."
+      },
+      "concepto_remedial": "El perímetro mide el contorno y se expresa en unidades de longitud (metros); el área mide la superficie y se expresa en unidades cuadradas (metros cuadrados). Si el enunciado habla de cercar, bordear o rodear, se trata de perímetro.",
+      "etiquetas": ["perímetro"]
+    },
+
+    {
+      "id": "GEO-N1-002",
+      "componente": "Geometría",
+      "competencia": "Interpretación y representación",
+      "nivel": 1,
+      "aprendizaje": "Reconocer los elementos de un prisma de base rectangular.",
+      "contexto": "Laboral",
+      "narrativa": "En el taller de tecnología los estudiantes construyen cajas con forma de prisma de base rectangular como la de la figura.",
+      "enunciado": "¿Cuántas caras tiene en total una caja con esa forma?",
+      "recurso": {
+        "tipo": "solido_geometrico",
+        "titulo": "Caja con forma de prisma rectangular",
+        "solido": "prisma",
+        "dimensiones": { "largo": "30 cm", "ancho": "20 cm", "alto": "15 cm" },
+        "vista": "isometrica",
+        "descripcion_accesible": "Prisma de base rectangular dibujado en perspectiva, con largo 30 cm, ancho 20 cm y alto 15 cm."
+      },
+      "opciones": { "A": "4", "B": "6", "C": "8", "D": "12" },
+      "clave": "B",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "Un prisma de base rectangular tiene dos bases iguales y caras laterales rectangulares.",
+        "Cuente por parejas de caras opuestas: la base y la tapa, el frente y el fondo, el lado izquierdo y el derecho.",
+        "En total son 3 parejas, es decir 6 caras."
+      ],
+      "distractores": {
+        "A": "4 es el número de caras laterales, sin contar la base ni la tapa.",
+        "C": "8 es el número de vértices del prisma, no de caras.",
+        "D": "12 es el número de aristas del prisma."
+      },
+      "concepto_remedial": "En un prisma de base rectangular se distinguen 6 caras, 12 aristas y 8 vértices. Las caras son las superficies planas, las aristas los segmentos donde se encuentran dos caras y los vértices los puntos donde concurren tres aristas.",
+      "etiquetas": ["sólidos"]
+    },
+
+    {
+      "id": "GEO-N1-003",
+      "componente": "Geometría",
+      "competencia": "Interpretación y representación",
+      "nivel": 1,
+      "aprendizaje": "Leer las coordenadas de un punto en el plano cartesiano.",
+      "contexto": "Matemático",
+      "narrativa": "En el mapa cuadriculado de la cancha del colegio se ubicaron tres puntos de referencia.",
+      "enunciado": "¿Cuáles son las coordenadas del punto R?",
+      "recurso": {
+        "tipo": "plano_cartesiano",
+        "titulo": "Puntos de referencia en la cancha",
+        "rango_x": [-5, 5],
+        "rango_y": [-5, 5],
+        "cuadricula": true,
+        "puntos": [
+          { "x": -3, "y": 2, "etiqueta": "P" },
+          { "x": 1, "y": -4, "etiqueta": "Q" },
+          { "x": 4, "y": 3, "etiqueta": "R", "destacado": true }
+        ],
+        "descripcion_accesible": "Plano cartesiano con el punto P en (−3, 2), el punto Q en (1, −4) y el punto R en (4, 3)."
+      },
+      "opciones": { "A": "(3, 4)", "B": "(4, 3)", "C": "(−4, 3)", "D": "(4, −3)" },
+      "clave": "B",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "Las coordenadas de un punto se escriben siempre en el orden (x, y): primero el desplazamiento horizontal y después el vertical.",
+        "Desde el origen, el punto R está 4 unidades a la derecha, de modo que x = 4.",
+        "Luego está 3 unidades hacia arriba, de modo que y = 3. Las coordenadas son (4, 3)."
+      ],
+      "distractores": {
+        "A": "(3, 4) invierte el orden de las coordenadas; corresponde a un punto distinto del plano.",
+        "C": "(−4, 3) ubicaría el punto a la izquierda del eje vertical, en el segundo cuadrante.",
+        "D": "(4, −3) ubicaría el punto por debajo del eje horizontal, en el cuarto cuadrante."
+      },
+      "concepto_remedial": "Un par ordenado (x, y) indica primero el movimiento horizontal desde el origen y después el vertical. Cambiar el orden cambia el punto, salvo cuando ambas coordenadas son iguales.",
+      "etiquetas": ["plano cartesiano", "coordenadas"]
+    },
+
+    {
+      "id": "GEO-N2-001",
+      "componente": "Geometría",
+      "competencia": "Interpretación y representación",
+      "nivel": 2,
+      "aprendizaje": "Representar el área de una figura compuesta mediante una expresión.",
+      "contexto": "Comunitario",
+      "narrativa": "El patio del colegio tiene la forma de la figura: un rectángulo de 12 m por 8 m al que se le retiró un cuadrado de 4 m de lado en una esquina, donde se construyó un depósito.",
+      "enunciado": "¿Cuál expresión representa el área del patio disponible, en metros cuadrados?",
+      "recurso": {
+        "tipo": "figura_geometrica",
+        "titulo": "Planta del patio escolar",
+        "forma": "poligono",
+        "vertices": [
+          { "x": 0, "y": 0, "etiqueta": "A" },
+          { "x": 12, "y": 0, "etiqueta": "B" },
+          { "x": 12, "y": 8, "etiqueta": "C" },
+          { "x": 4, "y": 8, "etiqueta": "D" },
+          { "x": 4, "y": 4, "etiqueta": "E" },
+          { "x": 0, "y": 4, "etiqueta": "F" }
+        ],
+        "medidas": [
+          { "entre": ["A", "B"], "valor": "12 m" },
+          { "entre": ["B", "C"], "valor": "8 m" },
+          { "entre": ["D", "E"], "valor": "4 m" },
+          { "entre": ["E", "F"], "valor": "4 m" }
+        ],
+        "descripcion_accesible": "Polígono en forma de L obtenido de un rectángulo de 12 por 8 metros al que se retiró un cuadrado de 4 metros de lado en la esquina superior izquierda."
+      },
+      "opciones": {
+        "A": "12 × 8 + 4 × 4",
+        "B": "12 × 8 − 4 × 4",
+        "C": "(12 − 4) × (8 − 4)",
+        "D": "2 × (12 + 8) − 4 × 4"
+      },
+      "clave": "B",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "Reconstruya la figura completa: el rectángulo que la contiene mide 12 m × 8 m, con área 96 m².",
+        "Identifique la parte retirada: un cuadrado de 4 m de lado, con área 4 × 4 = 16 m².",
+        "El área disponible es la del rectángulo menos la del cuadrado: 12 × 8 − 4 × 4 = 96 − 16 = 80 m²."
+      ],
+      "distractores": {
+        "A": "Suma el cuadrado en lugar de restarlo; esa expresión daría 112 m², más que el rectángulo original, lo cual es imposible.",
+        "C": "(12 − 4) × (8 − 4) = 32 m² corresponde a un rectángulo de 8 m por 4 m, que no es la figura mostrada.",
+        "D": "2 × (12 + 8) es el perímetro del rectángulo, no su área; mezcla dos magnitudes distintas."
+      },
+      "concepto_remedial": "Para hallar el área de una figura compuesta, descompóngala en rectángulos o complétela hasta formar uno y reste la parte sobrante. Verifique siempre que el resultado sea menor que el área de la figura que la contiene.",
+      "etiquetas": ["área"]
+    },
+
+    {
+      "id": "GEO-N2-002",
+      "componente": "Geometría",
+      "competencia": "Formulación y ejecución",
+      "nivel": 2,
+      "aprendizaje": "Aplicar el teorema de Pitágoras en una situación cotidiana.",
+      "contexto": "Laboral",
+      "narrativa": "Un técnico apoya una escalera contra la pared de un salón. La base de la escalera queda a 5 m del muro y el punto de apoyo en la pared está a 12 m del piso.",
+      "enunciado": "¿Cuánto mide la escalera?",
+      "recurso": {
+        "tipo": "figura_geometrica",
+        "titulo": "Escalera apoyada en la pared",
+        "forma": "triangulo",
+        "vertices": [
+          { "x": 0, "y": 0, "etiqueta": "A" },
+          { "x": 5, "y": 0, "etiqueta": "B" },
+          { "x": 0, "y": 12, "etiqueta": "C" }
+        ],
+        "medidas": [
+          { "entre": ["A", "B"], "valor": "5 m" },
+          { "entre": ["A", "C"], "valor": "12 m" }
+        ],
+        "angulos": [{ "en": "A", "valor": "90°", "marcar_recto": true }],
+        "descripcion_accesible": "Triángulo rectángulo con ángulo recto en A, cateto horizontal de 5 metros y cateto vertical de 12 metros; la escalera es la hipotenusa."
+      },
+      "opciones": { "A": "7 m", "B": "13 m", "C": "17 m", "D": "60 m" },
+      "clave": "B",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "La pared, el piso y la escalera forman un triángulo rectángulo; la escalera es la hipotenusa.",
+        "Aplique el teorema de Pitágoras: h² = 5² + 12² = 25 + 144 = 169.",
+        "Extraiga la raíz cuadrada: h = √169 = 13. La escalera mide 13 m."
+      ],
+      "distractores": {
+        "A": "7 m es la diferencia entre los catetos (12 − 5); el teorema de Pitágoras requiere sumar los cuadrados, no restar las longitudes.",
+        "C": "17 m es la suma de los catetos (5 + 12). La hipotenusa siempre es menor que esa suma y mayor que cada cateto.",
+        "D": "60 m es el producto 5 × 12, que corresponde al doble del área del triángulo, no a una longitud de la figura."
+      },
+      "concepto_remedial": "En un triángulo rectángulo, la hipotenusa cumple h² = a² + b². Eleve al cuadrado cada cateto, sume y extraiga la raíz. Compruebe que la hipotenusa quede mayor que cada cateto y menor que su suma.",
+      "etiquetas": ["teorema de Pitágoras"]
+    },
+
+    {
+      "id": "GEO-N2-003",
+      "componente": "Geometría",
+      "competencia": "Formulación y ejecución",
+      "nivel": 2,
+      "aprendizaje": "Calcular el área de un círculo a partir de su radio.",
+      "contexto": "Comunitario",
+      "narrativa": "En el parque del barrio se construyó una jardinera circular de 5 m de radio. Para calcular el césped necesario se usa π ≈ 3,14.",
+      "enunciado": "¿Cuál es el área aproximada de la jardinera?",
+      "recurso": {
+        "tipo": "figura_geometrica",
+        "titulo": "Jardinera circular",
+        "forma": "circulo",
+        "circulo": { "centro": { "x": 0, "y": 0 }, "radio": 5, "etiqueta_centro": "O", "radio_etiqueta": "5 m" },
+        "descripcion_accesible": "Circunferencia de radio 5 metros con centro O."
+      },
+      "opciones": { "A": "15,70 m²", "B": "31,40 m²", "C": "78,50 m²", "D": "157,00 m²" },
+      "clave": "C",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "El área del círculo se calcula con A = π r², donde r es el radio.",
+        "Eleve el radio al cuadrado: 5² = 25.",
+        "Multiplique por π: A ≈ 3,14 × 25 = 78,50 m²."
+      ],
+      "distractores": {
+        "A": "15,70 m corresponde a π × 5, es decir la mitad de la longitud de la circunferencia; no es un área.",
+        "B": "31,40 m es la longitud de la circunferencia (2 π r = 2 × 3,14 × 5), una medida de contorno y no de superficie.",
+        "D": "157,00 resulta de calcular 2 π r² o de duplicar el área; el factor 2 no aparece en la fórmula del área."
+      },
+      "concepto_remedial": "Distinga las dos fórmulas del círculo: la longitud de la circunferencia es 2 π r y se mide en metros; el área es π r² y se mide en metros cuadrados. Si el enunciado pide césped, pintura o superficie, se trata del área.",
+      "etiquetas": ["área"]
+    },
+
+    {
+      "id": "GEO-N3-001",
+      "componente": "Geometría",
+      "competencia": "Formulación y ejecución",
+      "nivel": 3,
+      "aprendizaje": "Usar semejanza de triángulos para hallar una altura inaccesible.",
+      "contexto": "Comunitario",
+      "narrativa": "A la misma hora del día, un poste de la cancha proyecta una sombra de 4,5 m, mientras que un estudiante de 1,6 m de estatura proyecta una sombra de 1,2 m.",
+      "enunciado": "¿Cuál es la altura del poste?",
+      "recurso": {
+        "tipo": "svg_personalizado",
+        "titulo": "Sombras del poste y del estudiante a la misma hora",
+        "ancho": 320,
+        "alto": 200,
+        "contenido": "<g><line x1='20' y1='170' x2='300' y2='170' style='stroke:var(--g-eje);stroke-width:2'/><line x1='60' y1='170' x2='60' y2='40' style='stroke:var(--g1);stroke-width:4'/><line x1='60' y1='40' x2='150' y2='170' style='stroke:var(--g2);stroke-width:2;stroke-dasharray:5 4'/><line x1='60' y1='170' x2='150' y2='170' style='stroke:var(--g2);stroke-width:3'/><text x='46' y='108' style='fill:var(--g-texto);font-size:12px;font-weight:600' text-anchor='end'>h</text><text x='105' y='186' style='fill:var(--g-texto);font-size:12px' text-anchor='middle'>4,5 m</text><line x1='210' y1='170' x2='210' y2='130' style='stroke:var(--g1);stroke-width:4'/><line x1='210' y1='130' x2='240' y2='170' style='stroke:var(--g2);stroke-width:2;stroke-dasharray:5 4'/><line x1='210' y1='170' x2='240' y2='170' style='stroke:var(--g2);stroke-width:3'/><text x='204' y='152' style='fill:var(--g-texto);font-size:12px;font-weight:600' text-anchor='end'>1,6 m</text><text x='252' y='186' style='fill:var(--g-texto);font-size:12px' text-anchor='middle'>1,2 m</text></g>",
+        "descripcion_accesible": "Esquema con dos triángulos semejantes: el poste de altura desconocida con sombra de 4,5 metros y el estudiante de 1,6 metros con sombra de 1,2 metros.",
+        "nota": "Los rayos del sol llegan con la misma inclinación, de modo que los dos triángulos son semejantes."
+      },
+      "opciones": { "A": "3,375 m", "B": "5,4 m", "C": "6,0 m", "D": "8,64 m" },
+      "clave": "C",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "A la misma hora los rayos solares tienen la misma inclinación, así que los triángulos formados por cada objeto y su sombra son semejantes.",
+        "En triángulos semejantes los lados correspondientes son proporcionales: h / 4,5 = 1,6 / 1,2.",
+        "Despeje: h = 4,5 × 1,6 ÷ 1,2 = 7,2 ÷ 1,2 = 6. El poste mide 6,0 m."
+      ],
+      "distractores": {
+        "A": "3,375 m resulta de invertir la proporción (h = 4,5 × 1,2 ÷ 1,6); así el poste quedaría más bajo que su propia sombra, lo que contradice la figura.",
+        "B": "5,4 m se obtiene al multiplicar 4,5 × 1,2, sin dividir entre la estatura del estudiante.",
+        "D": "8,64 m proviene de multiplicar 4,5 × 1,6 × 1,2, operación que no corresponde a la proporción planteada."
+      },
+      "concepto_remedial": "Al plantear una proporción, mantenga el mismo tipo de magnitud en cada razón: altura con altura y sombra con sombra. Escriba la proporción como altura₁/sombra₁ = altura₂/sombra₂ y verifique que el resultado sea razonable con respecto a la figura.",
+      "etiquetas": ["semejanza"]
+    },
+
+    {
+      "id": "GEO-N3-002",
+      "componente": "Geometría",
+      "competencia": "Formulación y ejecución",
+      "nivel": 3,
+      "aprendizaje": "Calcular el volumen de un cilindro a partir del radio y la altura.",
+      "contexto": "Laboral",
+      "narrativa": "La institución instaló un tanque cilíndrico para almacenar agua de lluvia. El tanque tiene 3 m de radio y 10 m de altura. Use π ≈ 3,14.",
+      "enunciado": "¿Cuál es el volumen aproximado del tanque, en metros cúbicos?",
+      "recurso": {
+        "tipo": "solido_geometrico",
+        "titulo": "Tanque cilíndrico",
+        "solido": "cilindro",
+        "dimensiones": { "radio": "3 m", "altura": "10 m" },
+        "vista": "isometrica",
+        "descripcion_accesible": "Cilindro de radio 3 metros y altura 10 metros."
+      },
+      "opciones": { "A": "94,2 m³", "B": "188,4 m³", "C": "282,6 m³", "D": "942,0 m³" },
+      "clave": "C",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "El volumen de un cilindro es el área de la base por la altura: V = π r² h.",
+        "Calcule el área de la base: π r² ≈ 3,14 × 3² = 3,14 × 9 = 28,26 m².",
+        "Multiplique por la altura: V ≈ 28,26 × 10 = 282,6 m³."
+      ],
+      "distractores": {
+        "A": "94,2 m² corresponde a la superficie lateral (2 π r h ÷ 2) o a π r h; en la fórmula del volumen el radio va elevado al cuadrado.",
+        "B": "188,4 m² es la superficie lateral del cilindro (2 π r h = 2 × 3,14 × 3 × 10), una medida de área y no de volumen.",
+        "D": "942,0 resulta de usar el diámetro al cuadrado en lugar del radio; conviene verificar qué dato ofrece el enunciado."
+      },
+      "concepto_remedial": "En V = π r² h, el radio se eleva al cuadrado y el resultado se expresa en unidades cúbicas. Si el enunciado da el diámetro, divídalo entre dos antes de sustituir.",
+      "etiquetas": ["volumen", "sólidos"]
+    },
+
+    {
+      "id": "GEO-N3-003",
+      "componente": "Geometría",
+      "competencia": "Argumentación",
+      "nivel": 3,
+      "aprendizaje": "Argumentar sobre la relación entre perímetro y área en figuras distintas.",
+      "contexto": "Matemático",
+      "narrativa": "Dos grupos recibieron 16 m de malla para cercar una parcela. El primer grupo construyó un rectángulo y el segundo un cuadrado, con las dimensiones de la tabla.",
+      "enunciado": "¿Cuál afirmación sobre las dos parcelas es correcta?",
+      "recurso": {
+        "tipo": "tabla",
+        "titulo": "Dimensiones de las dos parcelas",
+        "columnas": ["Figura", "Base (m)", "Altura (m)"],
+        "filas": [["Rectángulo", 6, 2], ["Cuadrado", 4, 4]]
+      },
+      "opciones": {
+        "A": "Tienen el mismo perímetro y la misma área, porque usan la misma malla.",
+        "B": "Tienen el mismo perímetro, pero el cuadrado encierra mayor área.",
+        "C": "El rectángulo tiene mayor perímetro, porque su base es más larga.",
+        "D": "Tienen la misma área, pero el cuadrado tiene menor perímetro."
+      },
+      "clave": "B",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "Calcule los perímetros: rectángulo, 2 × (6 + 2) = 16 m; cuadrado, 4 × 4 = 16 m. Los dos perímetros son iguales.",
+        "Calcule las áreas: rectángulo, 6 × 2 = 12 m²; cuadrado, 4 × 4 = 16 m².",
+        "Con el mismo contorno de 16 m, el cuadrado encierra 16 m² frente a los 12 m² del rectángulo: su área es mayor."
+      ],
+      "distractores": {
+        "A": "El perímetro coincide, pero las áreas no: 12 m² y 16 m². Igual perímetro no implica igual área.",
+        "C": "Una base más larga no implica mayor perímetro; el rectángulo compensa con lados cortos y su perímetro también es 16 m.",
+        "D": "Invierte la conclusión: las áreas son distintas y los perímetros, iguales."
+      },
+      "concepto_remedial": "Perímetro y área son magnitudes independientes. Entre todos los rectángulos con el mismo perímetro, el cuadrado es el que encierra la mayor área; cuanto más alargada sea la figura, menor será su área con el mismo contorno.",
+      "etiquetas": ["perímetro", "área"]
+    },
+
+    {
+      "id": "GEO-N4-001",
+      "componente": "Geometría",
+      "competencia": "Formulación y ejecución",
+      "nivel": 4,
+      "aprendizaje": "Resolver un problema de varios pasos con superficie lateral de un cilindro.",
+      "contexto": "Laboral",
+      "narrativa": "Se va a pintar únicamente la superficie lateral exterior de un tanque cilíndrico de 2 m de radio y 5 m de altura. Cada galón de pintura cubre 20 m² y solo se venden galones completos. Use π ≈ 3,14.",
+      "enunciado": "¿Cuántos galones de pintura se deben comprar como mínimo?",
+      "recurso": {
+        "tipo": "solido_geometrico",
+        "titulo": "Tanque por pintar",
+        "solido": "cilindro",
+        "dimensiones": { "radio": "2 m", "altura": "5 m", "rendimiento": "20 m² por galón" },
+        "vista": "isometrica",
+        "descripcion_accesible": "Cilindro de radio 2 metros y altura 5 metros, del que se pintará solo la cara lateral."
+      },
+      "opciones": { "A": "2 galones", "B": "3 galones", "C": "4 galones", "D": "7 galones" },
+      "clave": "C",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "La superficie lateral de un cilindro es A = 2 π r h, porque al desenrollarla se obtiene un rectángulo cuya base es la circunferencia y cuya altura es la del tanque.",
+        "Sustituya: A ≈ 2 × 3,14 × 2 × 5 = 62,8 m².",
+        "Divida entre el rendimiento: 62,8 ÷ 20 = 3,14 galones. Como solo se venden galones completos, se requieren 4 galones."
+      ],
+      "distractores": {
+        "A": "2 galones cubrirían 40 m², cantidad insuficiente para los 62,8 m² de la superficie lateral.",
+        "B": "3 galones cubren 60 m² y quedarían 2,8 m² sin pintar; al no poder comprar fracciones de galón, hay que redondear hacia arriba.",
+        "D": "7 galones corresponde a incluir también las dos bases y además redondear en exceso; el enunciado precisa que solo se pinta la cara lateral."
+      },
+      "concepto_remedial": "En problemas de varios pasos, identifique la magnitud exacta que se pide (aquí, solo la superficie lateral) y atienda las restricciones del contexto: cuando el producto se vende en unidades completas, el resultado se redondea siempre hacia arriba.",
+      "etiquetas": ["superficie", "sólidos"]
+    },
+
+    {
+      "id": "GEO-N4-002",
+      "componente": "Geometría",
+      "competencia": "Argumentación",
+      "nivel": 4,
+      "aprendizaje": "Justificar propiedades de un triángulo a partir de las coordenadas de sus vértices.",
+      "contexto": "Matemático",
+      "narrativa": "En el plano cartesiano se ubicó un triángulo con vértices A(0, 0), B(6, 0) y C(0, 8).",
+      "enunciado": "¿Cuál afirmación sobre ese triángulo está correctamente justificada?",
+      "recurso": {
+        "tipo": "plano_cartesiano",
+        "titulo": "Triángulo ABC en el plano",
+        "rango_x": [-2, 8],
+        "rango_y": [-2, 10],
+        "cuadricula": true,
+        "puntos": [
+          { "x": 0, "y": 0, "etiqueta": "A", "destacado": true },
+          { "x": 6, "y": 0, "etiqueta": "B", "destacado": true },
+          { "x": 0, "y": 8, "etiqueta": "C", "destacado": true }
+        ],
+        "segmentos": [
+          { "desde": { "x": 0, "y": 0 }, "hasta": { "x": 6, "y": 0 } },
+          { "desde": { "x": 6, "y": 0 }, "hasta": { "x": 0, "y": 8 } },
+          { "desde": { "x": 0, "y": 8 }, "hasta": { "x": 0, "y": 0 } }
+        ],
+        "descripcion_accesible": "Triángulo con vértices en el origen, en (6, 0) y en (0, 8); dos de sus lados están sobre los ejes."
+      },
+      "opciones": {
+        "A": "Es equilátero, porque sus tres vértices están sobre la cuadrícula.",
+        "B": "Es rectángulo en A y su lado BC mide 10 unidades.",
+        "C": "Es isósceles, porque los lados AB y AC son perpendiculares.",
+        "D": "Es rectángulo en B y su lado mayor mide 14 unidades."
+      },
+      "clave": "B",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "Los lados AB y AC están sobre el eje horizontal y el eje vertical respectivamente, de modo que forman un ángulo de 90° en A: el triángulo es rectángulo en A.",
+        "Calcule las longitudes de los catetos: AB = 6 unidades y AC = 8 unidades.",
+        "Aplique el teorema de Pitágoras para la hipotenusa: BC² = 6² + 8² = 36 + 64 = 100, luego BC = 10 unidades."
+      ],
+      "distractores": {
+        "A": "No es equilátero: sus lados miden 6, 8 y 10 unidades. Estar sobre la cuadrícula no dice nada sobre la igualdad de los lados.",
+        "C": "Los lados AB y AC sí son perpendiculares, pero eso define un triángulo rectángulo, no isósceles; además miden 6 y 8 unidades, de modo que no son iguales.",
+        "D": "El ángulo recto está en A, no en B, y el lado mayor es la hipotenusa BC, que mide 10 unidades (14 es la suma de los catetos)."
+      },
+      "concepto_remedial": "Cuando dos lados de un triángulo descansan sobre los ejes, el ángulo recto queda en el origen. Clasifique el triángulo calculando las longitudes de sus tres lados antes de afirmar que es equilátero, isósceles o escaleno.",
+      "etiquetas": ["plano cartesiano", "teorema de Pitágoras", "coordenadas"]
+    },
+
+    {
+      "id": "GEO-N4-003",
+      "componente": "Geometría",
+      "competencia": "Formulación y ejecución",
+      "nivel": 4,
+      "aprendizaje": "Aplicar una escala para obtener medidas y áreas reales.",
+      "contexto": "Laboral",
+      "narrativa": "En el plano de la institución, elaborado a escala 1:50, un salón aparece como un rectángulo de 10 cm por 6 cm.",
+      "enunciado": "¿Cuál es el área real de ese salón, en metros cuadrados?",
+      "recurso": {
+        "tipo": "figura_geometrica",
+        "titulo": "Salón en el plano (escala 1:50)",
+        "forma": "cuadrilatero",
+        "vertices": [
+          { "x": 0, "y": 0, "etiqueta": "P" },
+          { "x": 10, "y": 0, "etiqueta": "Q" },
+          { "x": 10, "y": 6, "etiqueta": "R" },
+          { "x": 0, "y": 6, "etiqueta": "S" }
+        ],
+        "medidas": [
+          { "entre": ["P", "Q"], "valor": "10 cm" },
+          { "entre": ["Q", "R"], "valor": "6 cm" }
+        ],
+        "descripcion_accesible": "Rectángulo que en el plano mide 10 centímetros de base y 6 centímetros de altura."
+      },
+      "opciones": { "A": "0,6 m²", "B": "15 m²", "C": "30 m²", "D": "150 m²" },
+      "clave": "B",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "La escala 1:50 indica que 1 cm del plano representa 50 cm reales. Convierta cada dimensión por separado.",
+        "Base real: 10 cm × 50 = 500 cm = 5 m. Altura real: 6 cm × 50 = 300 cm = 3 m.",
+        "Calcule el área con las medidas reales: 5 m × 3 m = 15 m²."
+      ],
+      "distractores": {
+        "A": "0,6 m² es el área medida sobre el papel (10 cm × 6 cm = 60 cm²) expresada en metros cuadrados, sin aplicar la escala.",
+        "C": "30 m² duplica el resultado; aparece al multiplicar el área del plano por 50 una sola vez en lugar de escalar cada dimensión.",
+        "D": "150 m² resulta de aplicar la escala a una sola dimensión y dejar la otra en centímetros."
+      },
+      "concepto_remedial": "La escala se aplica a longitudes. Si las longitudes se multiplican por k, el área se multiplica por k². Lo más seguro es convertir primero cada dimensión a medidas reales y calcular el área al final.",
+      "etiquetas": ["semejanza", "área"]
+    },
+
+    {
+      "id": "ALG-N1-001",
+      "componente": "Álgebra y cálculo",
+      "competencia": "Interpretación y representación",
+      "nivel": 1,
+      "aprendizaje": "Reconocer el patrón de una secuencia numérica en una tabla.",
+      "contexto": "Matemático",
+      "narrativa": "La tabla muestra los valores de una secuencia que sigue siempre la misma regla.",
+      "enunciado": "¿Cuál es el valor de y cuando x = 5?",
+      "recurso": {
+        "tipo": "tabla",
+        "titulo": "Valores de la secuencia",
+        "columnas": ["x", "y"],
+        "filas": [["1", 5], ["2", 8], ["3", 11], ["4", 14]]
+      },
+      "opciones": { "A": "15", "B": "16", "C": "17", "D": "20" },
+      "clave": "C",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "Observe cómo cambia y cuando x aumenta en 1: de 5 a 8 hay +3; de 8 a 11 hay +3; de 11 a 14 hay +3.",
+        "La regla es sumar 3 cada vez que x aumenta una unidad.",
+        "Al pasar de x = 4 a x = 5, sume 3 al último valor: 14 + 3 = 17."
+      ],
+      "distractores": {
+        "A": "15 suma solo 1 unidad al valor anterior; el incremento constante de la secuencia es 3.",
+        "B": "16 suma 2 unidades; conviene comprobar el incremento entre dos filas consecutivas cualesquiera.",
+        "D": "20 corresponde a sumar 3 dos veces; el enunciado pide únicamente el valor siguiente."
+      },
+      "concepto_remedial": "Para hallar el patrón de una secuencia, calcule la diferencia entre valores consecutivos. Si esa diferencia es constante, la secuencia es lineal y basta sumarla para obtener el término siguiente.",
+      "etiquetas": ["función lineal"]
+    },
+
+    {
+      "id": "ALG-N1-002",
+      "componente": "Álgebra y cálculo",
+      "competencia": "Formulación y ejecución",
+      "nivel": 1,
+      "aprendizaje": "Evaluar una expresión lineal en un contexto de tarifas.",
+      "contexto": "Familiar",
+      "narrativa": "Un servicio de transporte en Florida cobra una tarifa fija de banderazo más un valor por cada kilómetro recorrido, según la tabla.",
+      "enunciado": "¿Cuánto debe pagar un usuario por un recorrido de 4 kilómetros?",
+      "recurso": {
+        "tipo": "tabla",
+        "titulo": "Tarifas del servicio de transporte",
+        "columnas": ["Concepto", "Valor (pesos)"],
+        "filas": [["Banderazo (tarifa fija)", 3500], ["Por kilómetro recorrido", 1200]]
+      },
+      "opciones": { "A": "$4.700", "B": "$4.800", "C": "$8.300", "D": "$18.800" },
+      "clave": "C",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "El costo tiene dos partes: una fija, que no depende de la distancia, y una variable, que sí depende de ella.",
+        "Calcule la parte variable: 4 km × $1.200 = $4.800.",
+        "Sume el banderazo: $3.500 + $4.800 = $8.300."
+      ],
+      "distractores": {
+        "A": "$4.700 suma el banderazo y el valor de un solo kilómetro; faltan los otros tres kilómetros.",
+        "B": "$4.800 es únicamente la parte variable; falta agregar la tarifa fija.",
+        "D": "$18.800 aparece al multiplicar el banderazo por los 4 kilómetros; la tarifa fija se cobra una sola vez."
+      },
+      "concepto_remedial": "En un modelo de la forma costo = fijo + variable × cantidad, la parte fija se suma una sola vez. Escriba la expresión antes de operar: C = 3.500 + 1.200k.",
+      "etiquetas": ["función lineal"]
+    },
+
+    {
+      "id": "ALG-N1-003",
+      "componente": "Álgebra y cálculo",
+      "competencia": "Interpretación y representación",
+      "nivel": 1,
+      "aprendizaje": "Leer el valor de una función lineal en su gráfica.",
+      "contexto": "Matemático",
+      "narrativa": "La gráfica corresponde a una función lineal f.",
+      "enunciado": "Según la gráfica, ¿cuál es el valor de f(2)?",
+      "recurso": {
+        "tipo": "plano_cartesiano",
+        "titulo": "Gráfica de la función f",
+        "rango_x": [-4, 6],
+        "rango_y": [-4, 10],
+        "cuadricula": true,
+        "funciones": [
+          { "familia": "lineal", "m": 2, "b": 1, "etiqueta": "f", "etiqueta_x": 3.5 }
+        ],
+        "puntos": [{ "x": 2, "y": 5, "etiqueta": "", "destacado": true }],
+        "descripcion_accesible": "Recta creciente que pasa por (0, 1) y por (2, 5); su pendiente es 2."
+      },
+      "opciones": { "A": "1", "B": "2", "C": "4", "D": "5" },
+      "clave": "D",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "f(2) significa el valor de la función cuando x = 2, es decir la altura de la gráfica en ese punto.",
+        "Ubique x = 2 en el eje horizontal y suba verticalmente hasta la recta.",
+        "Lea el valor correspondiente en el eje vertical: y = 5. Por tanto f(2) = 5."
+      ],
+      "distractores": {
+        "A": "1 es el valor de f(0), es decir el punto donde la recta corta el eje vertical.",
+        "B": "2 es el valor de x que se sustituye en la función, no el resultado f(2).",
+        "C": "4 es el valor de la pendiente multiplicada por 2, pero falta sumar el término independiente."
+      },
+      "concepto_remedial": "La notación f(a) indica el valor de y cuando x = a. En la gráfica, se ubica a en el eje horizontal, se sube hasta la curva y se lee la altura en el eje vertical.",
+      "etiquetas": ["función lineal", "plano cartesiano"]
+    },
+
+    {
+      "id": "ALG-N2-001",
+      "componente": "Álgebra y cálculo",
+      "competencia": "Formulación y ejecución",
+      "nivel": 2,
+      "aprendizaje": "Plantear y resolver una ecuación lineal a partir de una condición geométrica.",
+      "contexto": "Comunitario",
+      "narrativa": "Se quiere cercar una cancha rectangular cuyo largo es el doble del ancho. Para cerrarla completamente se usarán 36 m de malla.",
+      "enunciado": "¿Cuánto mide el ancho de la cancha?",
+      "recurso": {
+        "tipo": "figura_geometrica",
+        "titulo": "Cancha rectangular",
+        "forma": "cuadrilatero",
+        "vertices": [
+          { "x": 0, "y": 0, "etiqueta": "A" },
+          { "x": 8, "y": 0, "etiqueta": "B" },
+          { "x": 8, "y": 4, "etiqueta": "C" },
+          { "x": 0, "y": 4, "etiqueta": "D" }
+        ],
+        "medidas": [
+          { "entre": ["A", "B"], "valor": "2x" },
+          { "entre": ["B", "C"], "valor": "x" }
+        ],
+        "descripcion_accesible": "Rectángulo cuyo lado horizontal se rotula 2x y cuyo lado vertical se rotula x.",
+        "nota": "La figura es un esquema; no está dibujada a escala."
+      },
+      "opciones": { "A": "4 m", "B": "6 m", "C": "9 m", "D": "12 m" },
+      "clave": "B",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "Llame x al ancho. Como el largo es el doble, el largo es 2x.",
+        "El perímetro es 2(largo + ancho) = 2(2x + x) = 6x, y debe ser igual a 36 m: 6x = 36.",
+        "Despeje: x = 36 ÷ 6 = 6 m. El ancho mide 6 m y el largo 12 m, con perímetro 2(12 + 6) = 36 m."
+      ],
+      "distractores": {
+        "A": "4 m da un perímetro de 2(8 + 4) = 24 m, menor que los 36 m disponibles.",
+        "C": "9 m resulta de dividir 36 entre 4, como si los cuatro lados fueran iguales; aquí dos lados miden el doble que los otros.",
+        "D": "12 m es la medida del largo, no la del ancho que pide el enunciado."
+      },
+      "concepto_remedial": "Asigne la variable a la cantidad desconocida que se pide y exprese las demás en función de ella. Al terminar, verifique la respuesta sustituyéndola en la condición original del problema.",
+      "etiquetas": ["ecuaciones", "perímetro"]
+    },
+
+    {
+      "id": "ALG-N2-002",
+      "componente": "Álgebra y cálculo",
+      "competencia": "Interpretación y representación",
+      "nivel": 2,
+      "aprendizaje": "Interpretar la razón de cambio en una gráfica lineal.",
+      "contexto": "Laboral",
+      "narrativa": "La gráfica muestra cómo se llena un tanque de agua del colegio durante los primeros minutos del bombeo.",
+      "enunciado": "¿Cuántos litros ingresan al tanque por cada minuto?",
+      "recurso": {
+        "tipo": "grafico_lineas",
+        "titulo": "Llenado del tanque",
+        "eje_x": "Tiempo (minutos)",
+        "eje_y": "Volumen (litros)",
+        "series": [
+          { "nombre": "Volumen", "puntos": [
+            { "x": 0, "y": 0 }, { "x": 2, "y": 40 }, { "x": 4, "y": 80 }, { "x": 6, "y": 120 }
+          ] }
+        ],
+        "descripcion_accesible": "Recta creciente que parte del origen y pasa por los puntos (2, 40), (4, 80) y (6, 120)."
+      },
+      "opciones": { "A": "10 litros por minuto", "B": "20 litros por minuto", "C": "40 litros por minuto", "D": "120 litros por minuto" },
+      "clave": "B",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "La razón de cambio es el cociente entre la variación del volumen y la variación del tiempo.",
+        "Tome dos puntos de la gráfica, por ejemplo (2, 40) y (4, 80): el volumen aumenta 80 − 40 = 40 litros mientras el tiempo aumenta 4 − 2 = 2 minutos.",
+        "Divida: 40 ÷ 2 = 20 litros por minuto. El mismo resultado se obtiene con cualquier par de puntos, porque la gráfica es una recta."
+      ],
+      "distractores": {
+        "A": "10 litros por minuto daría 60 litros en 6 minutos, pero la gráfica muestra 120 litros en ese tiempo.",
+        "C": "40 litros es la variación del volumen entre dos puntos, sin dividir entre los 2 minutos transcurridos.",
+        "D": "120 litros es el volumen total acumulado a los 6 minutos, no el ingreso por minuto."
+      },
+      "concepto_remedial": "La razón de cambio de una recta es la pendiente: variación vertical dividida entre variación horizontal. Confirme su resultado con otro par de puntos de la misma recta.",
+      "etiquetas": ["razón de cambio", "función lineal"]
+    },
+
+    {
+      "id": "ALG-N2-003",
+      "componente": "Álgebra y cálculo",
+      "competencia": "Interpretación y representación",
+      "nivel": 2,
+      "aprendizaje": "Identificar los ceros de una función cuadrática en su gráfica.",
+      "contexto": "Matemático",
+      "narrativa": "La parábola de la figura corresponde a la función f(x) = x² − 2x − 3.",
+      "enunciado": "¿Para qué valores de x se cumple que f(x) = 0?",
+      "recurso": {
+        "tipo": "plano_cartesiano",
+        "titulo": "Gráfica de f(x) = x² − 2x − 3",
+        "rango_x": [-4, 6],
+        "rango_y": [-6, 8],
+        "cuadricula": true,
+        "funciones": [
+          { "familia": "cuadratica", "a": 1, "b": -2, "c": -3, "etiqueta": "f", "etiqueta_x": 4 }
+        ],
+        "puntos": [
+          { "x": -1, "y": 0, "etiqueta": "", "destacado": true },
+          { "x": 3, "y": 0, "etiqueta": "", "destacado": true }
+        ],
+        "descripcion_accesible": "Parábola que abre hacia arriba y corta el eje horizontal en x igual a menos uno y en x igual a tres; su vértice está en (1, −4)."
+      },
+      "opciones": { "A": "x = −3 y x = 1", "B": "x = −1 y x = 3", "C": "x = 1 y x = 4", "D": "x = 0 y x = 2" },
+      "clave": "B",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "f(x) = 0 corresponde a los puntos donde la gráfica corta el eje horizontal, llamados ceros o raíces.",
+        "En la figura la parábola cruza el eje x en dos puntos: x = −1 y x = 3.",
+        "Compruebe algebraicamente: x² − 2x − 3 = (x + 1)(x − 3), de modo que las raíces son −1 y 3."
+      ],
+      "distractores": {
+        "A": "x = −3 y x = 1 son los valores de los factores con el signo invertido; al sustituir x = 1 se obtiene f(1) = −4, no 0.",
+        "C": "x = 1 es la abscisa del vértice, donde la función alcanza su mínimo (−4), no un cero.",
+        "D": "x = 0 y x = 2 dan f(0) = −3 y f(2) = −3; en ninguno de los dos la función vale cero."
+      },
+      "concepto_remedial": "Los ceros de una función son las abscisas de los puntos de corte con el eje x. Al factorizar x² + bx + c = (x − r₁)(x − r₂), las raíces son r₁ y r₂, con el signo contrario al que aparece dentro del paréntesis.",
+      "etiquetas": ["función cuadrática", "plano cartesiano"]
+    },
+
+    {
+      "id": "ALG-N3-001",
+      "componente": "Álgebra y cálculo",
+      "competencia": "Formulación y ejecución",
+      "nivel": 3,
+      "aprendizaje": "Resolver un sistema de dos ecuaciones lineales en contexto.",
+      "contexto": "Laboral",
+      "narrativa": "En la tienda escolar se registraron dos compras del mismo día. La primera fue de 2 jugos y 3 panes por $8.500; la segunda, de 1 jugo y 2 panes por $5.000. Los precios no cambiaron entre una compra y otra.",
+      "enunciado": "¿Cuánto cuesta un jugo?",
+      "recurso": {
+        "tipo": "tabla",
+        "titulo": "Compras registradas",
+        "columnas": ["Compra", "Jugos", "Panes", "Total pagado (pesos)"],
+        "filas": [["Primera", 2, 3, 8500], ["Segunda", 1, 2, 5000]]
+      },
+      "opciones": { "A": "$1.500", "B": "$1.750", "C": "$2.000", "D": "$2.500" },
+      "clave": "C",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "Llame j al precio del jugo y p al del pan. Las dos compras dan el sistema 2j + 3p = 8.500 y j + 2p = 5.000.",
+        "Despeje j en la segunda ecuación: j = 5.000 − 2p, y sustitúyalo en la primera: 2(5.000 − 2p) + 3p = 8.500, es decir 10.000 − 4p + 3p = 8.500.",
+        "Resuelva: −p = −1.500, luego p = 1.500 y j = 5.000 − 2(1.500) = 2.000. El jugo cuesta $2.000."
+      ],
+      "distractores": {
+        "A": "$1.500 es el precio del pan, no el del jugo. Al terminar un sistema conviene revisar cuál incógnita pide el enunciado.",
+        "B": "$1.750 resulta de dividir el total de una compra entre el número de productos, lo que supondría que jugo y pan cuestan lo mismo.",
+        "D": "$2.500 hace que la segunda compra cueste 2.500 + 2p = 5.000, es decir p = 1.250; con esos valores la primera compra daría $8.750 y no $8.500."
+      },
+      "concepto_remedial": "Para un sistema de dos ecuaciones, despeje una incógnita y sustitúyala en la otra ecuación. Verifique la solución reemplazando los dos valores en ambas ecuaciones originales.",
+      "etiquetas": ["sistemas de ecuaciones"]
+    },
+
+    {
+      "id": "ALG-N3-002",
+      "componente": "Álgebra y cálculo",
+      "competencia": "Formulación y ejecución",
+      "nivel": 3,
+      "aprendizaje": "Determinar el valor máximo de una función cuadrática en contexto.",
+      "contexto": "Familiar",
+      "narrativa": "Durante un entrenamiento de voleibol, la altura en metros que alcanza el balón después de t segundos se modela con h(t) = −5t² + 20t.",
+      "enunciado": "¿Cuál es la altura máxima que alcanza el balón?",
+      "recurso": {
+        "tipo": "plano_cartesiano",
+        "titulo": "Altura del balón en función del tiempo",
+        "rango_x": [0, 5],
+        "rango_y": [0, 25],
+        "cuadricula": true,
+        "paso_x": 1,
+        "paso_y": 5,
+        "funciones": [
+          { "familia": "cuadratica", "a": -5, "b": 20, "c": 0, "etiqueta": "h", "etiqueta_x": 3.2 }
+        ],
+        "puntos": [{ "x": 2, "y": 20, "etiqueta": "V", "destacado": true }],
+        "descripcion_accesible": "Parábola que abre hacia abajo, parte del origen, alcanza su punto más alto en (2, 20) y vuelve a cortar el eje horizontal en t igual a 4."
+      },
+      "opciones": { "A": "10 m", "B": "15 m", "C": "20 m", "D": "40 m" },
+      "clave": "C",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "Como el coeficiente de t² es negativo, la parábola abre hacia abajo y su vértice corresponde al valor máximo.",
+        "La abscisa del vértice es t = −b ÷ (2a) = −20 ÷ (2 × (−5)) = 2 segundos.",
+        "Sustituya en la función: h(2) = −5(2)² + 20(2) = −20 + 40 = 20. La altura máxima es 20 m."
+      ],
+      "distractores": {
+        "A": "10 m es la altura a t = 0,5 s aproximadamente, un punto de la subida y no el máximo.",
+        "B": "15 m corresponde a h(1) = −5 + 20 = 15, alcanzada antes del vértice.",
+        "D": "40 m es el valor de 20t en t = 2 sin restar el término −5t²; falta completar la sustitución."
+      },
+      "concepto_remedial": "En h(t) = at² + bt + c con a < 0, el máximo está en el vértice, cuya abscisa es t = −b/(2a). Ese valor es el instante; para obtener la altura hay que sustituirlo en la función.",
+      "etiquetas": ["función cuadrática"]
+    },
+
+    {
+      "id": "ALG-N3-003",
+      "componente": "Álgebra y cálculo",
+      "competencia": "Interpretación y representación",
+      "nivel": 3,
+      "aprendizaje": "Reconocer el modelo exponencial que describe una situación de duplicación.",
+      "contexto": "Matemático",
+      "narrativa": "En una práctica de laboratorio se observa un cultivo que comienza con 50 bacterias y cuya población se duplica cada hora, como registra la tabla.",
+      "enunciado": "¿Cuál expresión modela el número de bacterias P después de t horas?",
+      "recurso": {
+        "tipo": "tabla",
+        "titulo": "Población del cultivo por hora",
+        "columnas": ["Tiempo t (horas)", "Bacterias"],
+        "filas": [["0", 50], ["1", 100], ["2", 200], ["3", 400]]
+      },
+      "opciones": {
+        "A": "P = 50 + 50t",
+        "B": "P = 50 · 2ᵗ",
+        "C": "P = 2 · 50ᵗ",
+        "D": "P = 50t²"
+      },
+      "clave": "B",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "Observe cómo cambian los datos: cada hora la población no aumenta una cantidad fija, sino que se multiplica por 2. Eso descarta un modelo lineal.",
+        "En un modelo exponencial P = P₀ · aᵗ, el valor P₀ es la población inicial (50) y a es el factor de crecimiento por unidad de tiempo (2).",
+        "Verifique con la tabla: para t = 0, P = 50 · 2⁰ = 50; para t = 2, P = 50 · 2² = 200; para t = 3, P = 50 · 2³ = 400. Los tres valores coinciden."
+      ],
+      "distractores": {
+        "A": "P = 50 + 50t es un modelo lineal: daría 150 bacterias a las 2 horas y 200 a las 3, en lugar de 200 y 400.",
+        "C": "P = 2 · 50ᵗ da 2 bacterias en t = 0; intercambia la población inicial con el factor de crecimiento.",
+        "D": "P = 50t² daría 0 bacterias en t = 0 y 200 en t = 2, pero 450 en t = 3; el crecimiento cuadrático no reproduce la duplicación."
+      },
+      "concepto_remedial": "Si los datos se obtienen sumando siempre la misma cantidad, el modelo es lineal; si se obtienen multiplicando siempre por el mismo factor, el modelo es exponencial de la forma P₀ · aᵗ. Compruebe el modelo con al menos dos filas de la tabla.",
+      "etiquetas": ["función exponencial"]
+    },
+
+    {
+      "id": "ALG-N4-001",
+      "componente": "Álgebra y cálculo",
+      "competencia": "Formulación y ejecución",
+      "nivel": 4,
+      "aprendizaje": "Usar la razón de cambio para predecir cuándo una cantidad se agota.",
+      "contexto": "Comunitario",
+      "narrativa": "Un tanque comunitario se vacía a ritmo constante durante una jornada de riego. La gráfica muestra el volumen de agua registrado cada cinco minutos.",
+      "enunciado": "Si el ritmo se mantiene, ¿en qué minuto quedará vacío el tanque?",
+      "recurso": {
+        "tipo": "grafico_lineas",
+        "titulo": "Volumen de agua en el tanque",
+        "eje_x": "Tiempo (minutos)",
+        "eje_y": "Volumen (litros)",
+        "series": [
+          { "nombre": "Volumen", "puntos": [
+            { "x": 0, "y": 500 }, { "x": 5, "y": 400 }, { "x": 10, "y": 300 }, { "x": 15, "y": 200 }
+          ] }
+        ],
+        "descripcion_accesible": "Recta descendente que parte de 500 litros en el minuto cero y baja a 400, 300 y 200 litros en los minutos 5, 10 y 15."
+      },
+      "opciones": { "A": "Minuto 20", "B": "Minuto 25", "C": "Minuto 30", "D": "Minuto 50" },
+      "clave": "B",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "Calcule la razón de cambio: entre el minuto 0 y el 5 el volumen baja de 500 a 400 litros, es decir 100 litros en 5 minutos, o 20 litros por minuto.",
+        "Escriba el modelo: V = 500 − 20t, donde t está en minutos.",
+        "El tanque queda vacío cuando V = 0: 500 − 20t = 0, luego t = 500 ÷ 20 = 25 minutos."
+      ],
+      "distractores": {
+        "A": "En el minuto 20 el volumen es 500 − 20(20) = 100 litros; el tanque aún tiene agua.",
+        "C": "En el minuto 30 el modelo daría −100 litros, un valor imposible: el tanque se vació antes.",
+        "D": "El minuto 50 resulta de usar una razón de 10 litros por minuto, es decir de olvidar que los 100 litros se pierden en 5 minutos y no en 10."
+      },
+      "concepto_remedial": "Con un descenso constante, el modelo es V = V₀ − kt, donde k es la cantidad perdida por unidad de tiempo. Para saber cuándo se agota, iguale V a cero y despeje t.",
+      "etiquetas": ["razón de cambio", "función lineal", "ecuaciones"]
+    },
+
+    {
+      "id": "ALG-N4-002",
+      "componente": "Álgebra y cálculo",
+      "competencia": "Formulación y ejecución",
+      "nivel": 4,
+      "aprendizaje": "Plantear y resolver una inecuación lineal en un contexto de presupuesto.",
+      "contexto": "Familiar",
+      "narrativa": "Un plan de datos cobra un valor fijo mensual más un costo por cada gigabyte adicional consumido. La familia de Luisa dispone de $40.000 mensuales para ese servicio.",
+      "enunciado": "¿Cuál es el número máximo de gigabytes adicionales que puede consumir sin exceder el presupuesto?",
+      "recurso": {
+        "tipo": "tabla",
+        "titulo": "Condiciones del plan de datos",
+        "columnas": ["Concepto", "Valor (pesos)"],
+        "filas": [["Cargo fijo mensual", 25000], ["Cada gigabyte adicional", 500], ["Presupuesto disponible", 40000]]
+      },
+      "opciones": { "A": "15 GB", "B": "30 GB", "C": "50 GB", "D": "80 GB" },
+      "clave": "B",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "Llame g al número de gigabytes adicionales. El costo total es 25.000 + 500g y debe cumplir 25.000 + 500g ≤ 40.000.",
+        "Reste el cargo fijo en ambos lados: 500g ≤ 15.000.",
+        "Divida entre 500: g ≤ 30. El máximo es 30 GB adicionales, con un costo de 25.000 + 500(30) = $40.000."
+      ],
+      "distractores": {
+        "A": "15 GB proviene de interpretar los $15.000 disponibles como si fueran gigabytes; falta dividir entre el costo unitario de $500.",
+        "C": "50 GB se obtiene al dividir 25.000 entre 500, es decir usando el cargo fijo en lugar del saldo disponible.",
+        "D": "80 GB resulta de dividir los $40.000 completos entre $500, lo que ignora el cargo fijo del plan."
+      },
+      "concepto_remedial": "En una inecuación de presupuesto, el costo total no debe superar el dinero disponible. Plantee fijo + unitario × cantidad ≤ presupuesto, despeje la cantidad y, si debe ser un número entero, tome el mayor entero que cumpla la desigualdad.",
+      "etiquetas": ["inecuaciones", "ecuaciones"]
+    },
+
+    {
+      "id": "ALG-N4-003",
+      "componente": "Álgebra y cálculo",
+      "competencia": "Argumentación",
+      "nivel": 4,
+      "aprendizaje": "Comparar el comportamiento a largo plazo de un modelo lineal y uno exponencial.",
+      "contexto": "Matemático",
+      "narrativa": "La gráfica compara dos modelos de crecimiento: f(x) = 10x, de tipo lineal, y g(x) = 2ˣ, de tipo exponencial.",
+      "enunciado": "¿Cuál afirmación sobre los dos modelos está correctamente justificada?",
+      "recurso": {
+        "tipo": "plano_cartesiano",
+        "titulo": "Comparación de f(x) = 10x y g(x) = 2ˣ",
+        "rango_x": [0, 8],
+        "rango_y": [0, 80],
+        "cuadricula": true,
+        "paso_x": 1,
+        "paso_y": 10,
+        "funciones": [
+          { "familia": "lineal", "m": 10, "b": 0, "etiqueta": "f", "etiqueta_x": 6.5 },
+          { "familia": "exponencial", "a": 1, "base": 2, "etiqueta": "g", "etiqueta_x": 6.2 }
+        ],
+        "descripcion_accesible": "Una recta que crece de manera uniforme y una curva exponencial que al principio queda por debajo de la recta y luego la supera cerca de x igual a 6."
+      },
+      "opciones": {
+        "A": "f siempre es mayor que g, porque su pendiente es 10 y la base de g es solo 2.",
+        "B": "g es mayor que f desde el comienzo, porque las funciones exponenciales siempre crecen más rápido.",
+        "C": "f es mayor que g para valores pequeños de x, pero g la supera a partir de cierto valor, pues su crecimiento es exponencial.",
+        "D": "Las dos funciones crecen al mismo ritmo, porque ambas pasan por el primer cuadrante."
+      },
+      "clave": "C",
+      "correcta_verificada": true,
+      "solucion_pasos": [
+        "Compare valores concretos: en x = 4, f(4) = 40 y g(4) = 16, de modo que f es mayor. En x = 5, f(5) = 50 y g(5) = 32: f sigue siendo mayor.",
+        "Avance un paso más: en x = 6, f(6) = 60 y g(6) = 64. Aquí g ya superó a f, por lo que el cruce ocurre entre x = 5 y x = 6.",
+        "En x = 8, f(8) = 80 y g(8) = 256: la diferencia crece rápidamente. El comportamiento exponencial termina por dominar al lineal, aunque al principio tenga valores menores."
+      ],
+      "distractores": {
+        "A": "Es falso a partir del cruce: en x = 6, g(6) = 64 supera a f(6) = 60. Una pendiente grande no garantiza superioridad permanente frente a un crecimiento exponencial.",
+        "B": "En los primeros valores ocurre lo contrario: g(1) = 2 frente a f(1) = 10. El crecimiento exponencial es más rápido en su tasa, pero puede partir de valores menores.",
+        "D": "Los ritmos son distintos: f aumenta 10 unidades por cada unidad de x, mientras que g duplica su valor en cada paso."
+      },
+      "concepto_remedial": "Un modelo lineal aumenta una cantidad constante por unidad; un modelo exponencial se multiplica por un factor constante. Para comparar dos modelos, evalúelos en varios valores y localice el punto donde se cruzan; a largo plazo el exponencial siempre supera al lineal.",
+      "etiquetas": ["función exponencial", "función lineal", "razón de cambio"]
+    }
+
+  ]
+}
